@@ -4,7 +4,8 @@
   "description": "A site for sharing hobby enthusiasm and projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,15 @@
   "homepage": "https://github.com/oliver-jk-redding/myhobby#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "express-hbs": "^0.8.4",
     "http": "0.0.0",
     "method-override": "^2.3.5",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.7.0"
   }
 }
