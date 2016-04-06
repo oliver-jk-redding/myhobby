@@ -1,12 +1,11 @@
 var express = require('express')
 var router = express.Router()
-var fs = require('fs')
 
-function getUserInfo(callback) {
-  fs.readFile('/./db/userInfo.json', function(err, data) {
-    if(err) {callback(err); return}
-    callback(data)
-  })
+var users = {
+  users: [
+    {"id":"1","name":"Harry Hobbymouse","profileImg":"http://pngimg.com/upload/rat_mouse_PNG2465.png","hobbies":["karate","scissor-cutting"]},
+    {"id":"2","name":"Larry Craftdog","homepage":"http://animaliaz-life.com/data_images/dog/dog4.jpg","hobbies":["music","car modding"]}
+  ]
 }
 
 // Returns json of users
