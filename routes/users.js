@@ -10,14 +10,8 @@ var users = {
 
 // Returns json of users
 router.get('/users', function (req, res, callback) {
-  // getUserInfo(function(err, data) {
-    // if(err) {callback(err); return}
-    res.status(200)
-    var json = {cats: [{name: 'piet'}]};
-    // res.json({cats: [{name: 'piet'}]});
-    // res.json(json)
-    callback(null, res, json)
-  // })
+  res.status(200)
+  callback(null, users)
 })
 
 // Returns json of user information
