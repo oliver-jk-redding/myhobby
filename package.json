@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --content-base ./ --hot"
+    "start": "webpack-dev-server --optimize-minimize --content-base ./ --hot"
   },
   "dependencies": {
   },

@@ -3,8 +3,8 @@ var path = require('path')
 module.exports = {
   entry: ["webpack/hot/dev-server", "./src/main.js"],
   output: {
-    path: __dirname + '/public',
-    publicPath: "/public/",
+    path: __dirname + '/assets',
+    publicPath: "/assets/",
     filename: "bundle.js"
   },
   module: {
