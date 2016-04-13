@@ -1,0 +1,74 @@
+* {
+    /*border-style: solid;*/
+    border-width: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #182326;
+}
+#nav-wrapper {
+  background-color: #C70808;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-shadow: 2px 2px #182326;
+  box-shadow: 0px 2px 10px black;
+  float: left;
+  z-index: 100;
+}
+#nav-wrapper .title {
+  position: relative;
+  margin: 10px;
+  margin-left: 65px;
+  font-size: 40px;
+  float: left;
+}
+#nav-wrapper .name {
+  position: relative;
+  float: right;
+  margin: 18px;
+  margin-right: 65px;
+}
+#body-wrapper {
+  margin: auto;
+  margin-top: 76px;
+  width: 840px;
+  position: relative;
+}
+#profile-wrapper {
+  padding: 30px 30px 0 0;
+  width: 230px;
+  float: left;
+  position: relative;
+}
+.profile, .project-box {
+  background-color: #727EA1;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px black;
+}
+.project-box {
+  padding: 20px;
+}
+#image img {
+  width: 220px;
+}
+#hobbies li {
+  font-size: 15px;
+}
+.profile .heading {
+  margin-bottom: 5px;
+}
+#workbench-wrapper {
+  width: 575px;
+  float: left;
+  position: relative;
+  padding-top: 30px;
+}

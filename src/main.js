@@ -1,4 +1,5 @@
 var request = require('superagent');
+require('../main.css');
 
 // require templates
 var navTemplate = require('./../views/nav.jade');
@@ -16,9 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
   request.get('http://localhost:3000/v1/myhobby/user/1', function(err, res) {
     if(res.status >= 200 && res.status < 400 && !err) {
       var userData = res.body;
-      document.body.appendChild(newElem('div', 'nav-wrapper', null, navTemplate, userData));
-      document.body.appendChild(newElem('div', 'profile-wrapper', null, profileTemplate));
-      document.body.appendChild(newElem('div', 'workbench-wrapper', null, workbenchTemplate));
+      document.body.appendChild(newElem('nav', ['#nav-wrapper'], navTemplate, userData));
+      document.body.appendChild(newElem('div', ['#body-wrapper']));
+      var bodyWrapper = document.getElementById('body-wrapper');
+      bodyWrapper.appendChild(newElem('div', ['#profile-wrapper'], profileTemplate));
+      bodyWrapper.appendChild(newElem('div', ['#workbench-wrapper'], workbenchTemplate));
       renderProfile(userData, function(element, callback) {
         callback(element);
       });

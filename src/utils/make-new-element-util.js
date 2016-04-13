@@ -1,9 +1,9 @@
-module.exports = (elemType, idName, className, template, data) => {
+var setIdClass = require('./set-id-class-util.js');
+
+module.exports = (elemType, idClass, template, data) => {
   var elem = document.createElement(elemType);
-  if(idName)
-    elem.id = idName;
-  if(className)
-    elem.className += className;
-  elem.innerHTML = template(data);
+  elem = setIdClass(elem, idClass);
+  if(template)
+    elem.innerHTML = template(data);
   return elem;
 }
