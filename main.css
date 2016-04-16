@@ -60,7 +60,7 @@ body {
 #image img {
   width: 220px;
 }
-#hobbies li {
+.profile li {
   font-size: 15px;
 }
 .profile .heading {

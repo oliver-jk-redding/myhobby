@@ -16,6 +16,8 @@
     "jade-html-loader": "0.0.3",
     "jade-loader": "^0.8.0",
     "normalize.css": "^4.1.1",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "superagent": "^1.8.3",
+    "webpack": "^1.13.0"
   }
 }
