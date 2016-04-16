@@ -69,13 +69,15 @@ body {
   box-shadow: 1px 1px 5px black;
 }
 .project-box, .projectDivHeading {
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 .projectDivHeading h3 {
   display: inline;
 }
 .projectDivHeading button {
   float: right;
+}
+.util-btn {
   display: inline;
   padding: 1px 6px;
   border-radius: 2px;

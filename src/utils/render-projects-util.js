@@ -1,5 +1,7 @@
 var projectTemplate = require('./../../views/workbench-templates/project.jade');
 var newElem = require('./make-new-element-util.js');
+var renderNewProject = require('./render-new-project-util.js');
+var addListener = require('./add-listeners-util.js');
 
 module.exports = (userData, callback) => {
   var projectContainer = document.getElementById("projects");
@@ -8,4 +10,5 @@ module.exports = (userData, callback) => {
     project.progressShots = project.progressShots.reverse();
     projectContainer.appendChild(newElem('div', ['.project-box'], projectTemplate, project));
   });
+  addListener('newProjectBtn', renderNewProject);
 }
