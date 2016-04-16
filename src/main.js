@@ -10,7 +10,8 @@ var workbenchTemplate = require('./../views/workbench-templates/workbench.jade')
 var newElem = require('./utils/make-new-element-util.js');
 var renderProfile = require('./utils/render-profile-util.js');
 var renderProjects = require('./utils/render-projects-util.js');
-// var renderUserHome = require('./utils/render-userhome-util.js')
+// var renderUserHome = require('./utils/render-userhome-util.js');
+var addListeners = require('./utils/add-listeners-util.js');
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
       renderProjects(userData, function(element, callback) {
         callback(element);
       });
+      addListeners();
     }
     else console.log(err);
   });

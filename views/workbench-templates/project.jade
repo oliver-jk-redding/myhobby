@@ -1,4 +1,8 @@
-h5.heading= name
-h5.heading= dateStart
-each shot in progressShots
-  img(src= shot)
+.projectTitleInfo
+  h5.heading= name
+  h6.heading= dateStart
+  .progressShots
+    .thumbs
+      each shot in progressShots
+        img(src= shot)
+
