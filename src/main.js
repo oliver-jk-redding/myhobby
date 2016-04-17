@@ -1,5 +1,5 @@
 require('../main.css');
-var render = require('./utils/renderer-util.js')
+var render = require('./utils/renderer-util.js');
 
 document.addEventListener("DOMContentLoaded", function() {
 
