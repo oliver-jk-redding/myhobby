@@ -30,6 +30,8 @@ body {
   position: relative;
   box-shadow: 0px 2px 10px black;
   z-index: 100;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 .nav-content .title {
   position: relative;
