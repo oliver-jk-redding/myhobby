@@ -9,6 +9,5 @@ module.exports = (elem, idClass) => {
         break;
     }
   }
-  console.log(elem);
   return elem;
 }

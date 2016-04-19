@@ -1,2 +1,9 @@
 .projectDivHeading
   h3 New Project
+  button.util-btn#cancelBtn Cancel
+  .new-project-content
+    form.new-project(action="http://localhost:3000/v1/myhobby/user/#{id}", accept-charset="UTF-8", method="post")
+      input(type="text", placeholder="Project name", name="projectName")
+      input(type="submit", name="save", class="util-btn", id="saveBtn", value="Save")
+
+
