@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
   render.profileWrapper();
   render.profile();
   render.workbenchWrapper();
-  render.projects();
+  render.projects()
 
 });

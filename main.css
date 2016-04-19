@@ -86,7 +86,7 @@ body {
   background-color: #D0F3F3;
   cursor: pointer;
 }
-.projectDivHeading button:focus {
+button:focus, input:focus {
   outline: 0;
 }
 #image img {
