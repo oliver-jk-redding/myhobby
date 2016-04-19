@@ -6,6 +6,6 @@ module.exports = callback => {
       var userData = res.body;
       callback(userData);
     }
-    else console.log(err);
+    else console.log('ERROR: ', err);
   });
 }
