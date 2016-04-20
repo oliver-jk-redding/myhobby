@@ -1,0 +1,21 @@
+{
+  "name": "myhobby",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Ollie Redding <oliver.jk.redding@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/oliver-jk-redding/myhobby-client-side",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dropzone": "https://github.com/enyo/dropzone.git#~3.10.2"
+  }
+}

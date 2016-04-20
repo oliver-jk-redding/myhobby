@@ -135,3 +135,6 @@ button:focus, input:focus {
   height: 150px;
   float: left;
 }
+.hidden {
+  display: none;
+}
